@@ -12,6 +12,7 @@ public class Main {
         felinos[1] = leon;
         felinos[2] = guepardo;
 
+        System.out.println();
 
 
 

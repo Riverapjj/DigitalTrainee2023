@@ -2,6 +2,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class EjemploAutomovilArreglo {
+
     public static void main(String[] args) {
 
         Persona conductorSubaru = new Persona("Luci", "Martínez");
@@ -43,36 +44,46 @@ public class EjemploAutomovilArreglo {
         autos[3] = suzuki;
         autos[4] = audi;
 
-        imprimirDetalles(subaru);
+        for (Automovil auto : autos) {
+            imprimirDetalles(auto);
+        }
 
+        /*
         Arrays.sort(autos);
         for (Automovil auto : autos) {
-            System.out.println(auto);
+            System.out.println(auto.getConductor());
         }
+        */
     }
 
-    public imprimirDetalles(Automovil a) {
-        String fabricante = a.getFabricante();
-        String detalles = "";
+    public static void imprimirDetalles(Automovil a) {
 
-        switch (fabricante) {
-            case "Nissan":
-                break;
+        System.out.println("\n\n\t\t\t----------------" + a.getFabricante() + " "  + a.getModelo() + "----------------");
+        System.out.println("Conductor: \n\t" + a.getConductor());
+        System.out.println("\nDatos del automovil: \n\t" +
+                "Fabricante: " + a.getFabricante() +
+                "\n\tModelo: " + a.getModelo() +
+                "\n\tColor: " + a.getColor());
 
-            case "Mazda":
-                break;
-
-            case "Suzuki":
-                break;
-
-            case "Audi":
-                break;
-
-            case  "Subaru":
-                break;
-            default:
-                return "No existe ese carro con ese fabricante.";
+        if(a.getTipo() != null) {
+            System.out.println("\tTipo: " + a.getTipo());
+        }else {
+            System.out.println("\tTipo: Informacion no disponible.");
         }
-         return detalles;
+
+        System.out.println("\nDatos del motor: ");
+
+        if(a.getMotor() != null) {
+            System.out.println("\tCilindrada: " + a.getMotor().getCilindrada() +
+                    "\n\tTipo de motor: " + a.getMotor().getTipo());
+        }else {
+            System.out.println("\tInformacion no disponible.");
+        }
+
+        System.out.println("\nColor de patente: " + a.getColorPatente());
+        System.out.println("Capacidad del tanque: " + a.getEstanque().getCapacidad());
+
+
     }
+
 }

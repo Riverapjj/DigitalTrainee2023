@@ -80,7 +80,7 @@ public class EjemploAutomovilArreglo {
             System.out.println("\tInformacion no disponible.");
         }
 
-        System.out.println("\nColor de patente: " + a.getColorPatente());
+        System.out.println("\nColor de patente: " + Automovil.getColorPatente());
         System.out.println("Capacidad del tanque: " + a.getEstanque().getCapacidad());
 
 

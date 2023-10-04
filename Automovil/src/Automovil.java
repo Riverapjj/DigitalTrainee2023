@@ -15,8 +15,17 @@ public class Automovil implements Comparable<Automovil>{
     private static Color colorPatente = Color.NARANJA;
     private static int capacidadEstanqueEstatico = 30;
     private static int ultimoId;
-    private static final Integer VELOCIDAD_MAX_CARRETERA = 120;
-    private static final int VELOCIDAD_MAX_CIUDAD = 60;
+
+    public static int getCapacidadEstanqueEstatico() {
+        return capacidadEstanqueEstatico;
+    }
+
+    public static void setCapacidadEstanqueEstatico(int capacidadEstanqueEstatico) {
+        Automovil.capacidadEstanqueEstatico = capacidadEstanqueEstatico;
+    }
+
+    public static final Integer VELOCIDAD_MAX_CARRETERA = 120;
+    public static final int VELOCIDAD_MAX_CIUDAD = 60;
     private static final String COLOR_ROJO = "Rojo";
     private static final String COLOR_AMARILLO = "Amarillo";
     private static final String COLOR_AZUL = "Azul";

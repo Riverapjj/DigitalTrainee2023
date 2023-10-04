@@ -1,3 +1,5 @@
+package modelo;
+
 abstract public class Hoja {
 
     protected String contenido;

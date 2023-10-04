@@ -1,16 +1,17 @@
+package modelo;
+
 import java.util.List;
 
-public class Curriculo extends Hoja implements Imprimible{
+public class Curriculo extends Hoja implements Imprimible {
 
     private Persona persona;
     private String carrera;
     private List<String> experiencia;
 
-    public Curriculo(String contenido, Persona persona, String carrera, List<String> experiencia) {
+    public Curriculo(String contenido, Persona persona, String carrera) {
         super(contenido);
         this.persona = persona;
         this.carrera = carrera;
-        this.experiencia = experiencia;
     }
 
     public Curriculo addExperiencia(String exp) {

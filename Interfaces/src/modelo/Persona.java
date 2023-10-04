@@ -1,3 +1,5 @@
+package modelo;
+
 public class Persona {
 
     private String nombre;
@@ -28,7 +30,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
+        return "modelo.Persona{" +
                 "nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 '}';

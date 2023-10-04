@@ -1,4 +1,9 @@
-public class Pagina extends Hoja implements Imprimible{
+package modelo;
+
+import modelo.Hoja;
+import modelo.Imprimible;
+
+public class Pagina extends Hoja implements Imprimible {
 
     public Pagina(String contenido) {
         super(contenido);

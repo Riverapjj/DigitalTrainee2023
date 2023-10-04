@@ -1,7 +1,9 @@
+package modelo;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Libro implements Imprimible{
+public class Libro implements Imprimible {
 
     private List<Imprimible> paginas;
     private Persona autor;
@@ -25,7 +27,7 @@ public class Libro implements Imprimible{
         StringBuilder sb = new StringBuilder("Titulo: ");
         sb.append(this.titulo).append("\n")
                 .append("Autor: ").append(this.autor).append("\n")
-                .append("Genero: ").append(genero).append("\n");
+                .append("modelo.Genero: ").append(genero).append("\n");
 
         for (Imprimible pag : this.paginas) {
             sb.append(pag.imprimir()).append("\n");

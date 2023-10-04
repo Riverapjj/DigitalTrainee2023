@@ -1,3 +1,5 @@
+package modelo;
+
 public interface Imprimible {
     String TEXTO_DEFECTO = "Imprimiendo un valor por defecto";
 
@@ -5,7 +7,7 @@ public interface Imprimible {
         return TEXTO_DEFECTO;
     }
 
-    static void imrpimir(Imprimible imprimible) {
+    static void imprimir(Imprimible imprimible) {
         System.out.println(imprimible.imprimir());
     }
 }

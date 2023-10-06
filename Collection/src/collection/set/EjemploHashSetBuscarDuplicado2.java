@@ -16,7 +16,7 @@ public class EjemploHashSetBuscarDuplicado2 {
                 duplicados.add(pez);
             }
         }
-        
+
         unicos.removeAll(duplicados);
         System.out.println(unicos.size() + " elementos no duplicados: " + unicos);
         System.out.println(duplicados.size() + " elementos duplicados: " + duplicados);

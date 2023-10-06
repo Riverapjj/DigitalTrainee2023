@@ -6,11 +6,11 @@ public class EjemploImprenta {
         Curriculo cv = new Curriculo("Resumen laboral...", new Persona("John", "Doe"),
                 "Ingeniero en sistemas");
 
-        cv.addExperiencia("Java")
+       /* cv.addExperiencia("Java")
                 .addExperiencia("Oracle DBA")
                 .addExperiencia("Spring Framework")
                 .addExperiencia("Desarrollador fullstack: ")
-                .addExperiencia("Angular");
+                .addExperiencia("Angular");*/
 
         Libro libro = new Libro(new Persona("Erich", "Gamma"),
                 "Patrones de diseños: Elem. Reusables POO", Genero.PROGRAMACION);
@@ -24,6 +24,8 @@ public class EjemploImprenta {
         Informe informe = new Informe("Estudio sobre microservicios",
                 new Persona("Martin", "Fowler"),
                 new Persona("James", "Gosling"));
+
+        cv.imprimir();
 
         imprimir(cv);
         imprimir(informe);

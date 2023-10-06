@@ -6,7 +6,7 @@ public class Curriculo extends Hoja implements Imprimible {
 
     private Persona persona;
     private String carrera;
-    private List<String> experiencia;
+    //private List<String> experiencia;
 
     public Curriculo(String contenido, Persona persona, String carrera) {
         super(contenido);
@@ -14,10 +14,10 @@ public class Curriculo extends Hoja implements Imprimible {
         this.carrera = carrera;
     }
 
-    public Curriculo addExperiencia(String exp) {
+    /*public Curriculo addExperiencia(String exp) {
         experiencia.add(exp);
         return this;
-    }
+    }*/
 
     @Override
     public String imprimir() {
@@ -28,9 +28,9 @@ public class Curriculo extends Hoja implements Imprimible {
                 .append(this.carrera).append("\n")
                 .append("Experiencias: \n");
 
-        for (String exp : this.experiencia) {
+        /*for (String exp : this.experiencia) {
             sb.append("- ").append(exp).append("\n");
-        }
+        }*/
 
         return sb.toString();
     }

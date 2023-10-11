@@ -40,12 +40,10 @@ public class Cliente {
         this.facturas = new ArrayList<>();
     }
 
-    public Cliente(Long id, String nombre, String apellido, String formaPago) {
+    public Cliente(String nombre, String apellido) {
         this();
-        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.formaPago = formaPago;
     }
 
     public ClienteDetalle getDetalle() {

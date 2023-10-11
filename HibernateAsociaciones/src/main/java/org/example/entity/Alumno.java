@@ -93,6 +93,6 @@ public class Alumno {
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", cursos=" + cursos +
-                '}';
+                "}";
     }
 }

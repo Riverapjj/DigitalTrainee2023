@@ -81,6 +81,6 @@ public class Curso {
                 ", titulo='" + titulo + '\'' +
                 ", profesor='" + profesor + '\'' +
                 ", alumnos=" + alumnos +
-                '}';
+                "}";
     }
 }

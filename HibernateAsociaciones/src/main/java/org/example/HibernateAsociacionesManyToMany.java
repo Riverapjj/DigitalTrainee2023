@@ -27,8 +27,8 @@ public class HibernateAsociacionesManyToMany {
             em.persist(alumno2);
 
             em.getTransaction().commit();
-            System.out.println(alumno1);
-            System.out.println(alumno2);
+            //System.out.println(alumno1);
+            //System.out.println(alumno2);
 
             em.getTransaction().begin();
             Curso c2 = em.find(Curso.class, 3L);

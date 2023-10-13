@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "groups")
-public class Groups {
+@Table(name = "courses")
+public class Course {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,14 +16,14 @@ public class Groups {
 
     private String name;
 
-    @ManyToMany(mappedBy = "groups")
-    private List<Students> students;
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "course")
+    private List<Student> students;
 
-    public Groups() {
+    public Course() {
         this.students = new ArrayList<>();
     }
 
-    public Groups(String name) {
+    public Course(String name) {
         this();
         this.name = name;
     }
@@ -44,18 +44,28 @@ public class Groups {
         this.name = name;
     }
 
-    public List<Students> getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Students> students) {
+    public void setStudents(List<Student> students) {
         this.students = students;
+    }
+
+    public void addStudent(Student student) {
+        this.students.add(student);
+        student.setCourse(this);
+    }
+
+    public void removeStudent(Student student) {
+        this.students.remove(student);
+        student.setCourse(null);
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Groups group)) return false;
+        if (!(o instanceof Course group)) return false;
         return Objects.equals(getId(), group.getId());
     }
 

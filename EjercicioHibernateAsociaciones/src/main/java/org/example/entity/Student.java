@@ -2,35 +2,31 @@ package org.example.entity;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name = "students")
-public class Students {
+public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "fisrt_name")
+    @Column(name = "first_name")
     private String firstName;
 
     @Column(name = "last_name")
     private String lastName;
 
-    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @JoinTable(name = "tbl_students_groups", joinColumns = @JoinColumn(name = "student_id"),
-    inverseJoinColumns = @JoinColumn(name = "group_id"),
-    uniqueConstraints = @UniqueConstraint(columnNames = {"student_id", "group_id"}))
-    private List<Groups> groups;
+    @ManyToOne
+    @JoinColumn(name = "id_course")
+    private Course course;
 
-    public Students () {
-        this.groups = new ArrayList<>();
+    public Student() {
+
     }
 
-    public Students(String firstName, String lastName) {
+    public Student(String firstName, String lastName) {
         this();
         this.firstName = firstName;
         this.lastName = lastName;
@@ -44,12 +40,12 @@ public class Students {
         this.id = id;
     }
 
-    public List<Groups> getGroups() {
-        return groups;
+    public Course getCourse() {
+        return course;
     }
 
-    public void setGroups(List<Groups> groups) {
-        this.groups = groups;
+    public void setCourse(Course course) {
+        this.course = course;
     }
 
     public String getFirstName() {
@@ -68,20 +64,10 @@ public class Students {
         this.lastName = lastName;
     }
 
-    public void addGroup(Groups group) {
-        this.groups.add(group);
-        group.getStudents().add(this);
-    }
-
-    public void deleteGroup(Groups group) {
-        this.groups.remove(group);
-        group.getStudents().remove(this);
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Students students)) return false;
+        if (!(o instanceof Student students)) return false;
         return Objects.equals(getId(), students.getId());
     }
 

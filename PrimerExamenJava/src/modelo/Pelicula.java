@@ -11,6 +11,8 @@ public class Pelicula {
     private Date peliculaEspectaculo;
     private String lugar;
 
+    public Pelicula() {}
+
     public Pelicula(String nombrePelicula, Date peliculaEspectaculo, String lugar) {
         this.nombrePelicula = nombrePelicula;
         this.peliculaEspectaculo = peliculaEspectaculo;

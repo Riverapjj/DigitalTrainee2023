@@ -20,16 +20,22 @@ public class PeliculaListRepositorio implements CrudPelicula{
     @Override
     public void actualizarPelicula(Pelicula p) {
         Pelicula peli = this.porNombre(p.getNombrePelicula());
-
     }
 
     @Override
     public void eliminarPelicula(Pelicula p) {
-
+        listaPeliculas.remove(p);
     }
 
     @Override
-    public Pelicula porId(Pelicula p) {
-        return null;
+    public Pelicula porNombre(String p) {
+        Pelicula peli = new Pelicula();
+        for (Pelicula pelicula : listaPeliculas) {
+            if(pelicula.getNombrePelicula() == p) {
+                peli = pelicula;
+            }
+        }
+
+        return peli;
     }
 }

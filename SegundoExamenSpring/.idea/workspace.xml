@@ -4,7 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f77b2e0-0702-4b5e-9ecb-b87dd124a81c" name="Changes" comment="" />
+    <list default="true" id="2f77b2e0-0702-4b5e-9ecb-b87dd124a81c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/java/com/ejercicio3forms/models/entity/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/java/com/ejercicio3forms/models/entity/Direccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/java/com/ejercicio3forms/models/entity/Pais.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/resources/static/images/spring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/resources/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejercicio3-forms/src/main/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/java/com/facturacliente/controllers/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/java/com/facturacliente/controllers/PageRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/java/com/facturacliente/models/dao/IClienteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/java/com/facturacliente/models/entity/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/java/com/facturacliente/models/service/ClienteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/java/com/facturacliente/models/service/IClienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/java/com/facturacliente/util/PageItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/static/images/spring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/templates/layout/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/templates/listar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../factura-cliente/src/main/resources/templates/paginator-nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/controllers/FormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/dao/IClienteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/dao/IDireccionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/dao/IPaisDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/entity/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/entity/Direccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/entity/Pais.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/servicies/ClienteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/servicies/DireccionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/servicies/IClienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/servicies/IDireccionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/servicies/IPaisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/java/com/formsejercicio3/models/servicies/PaisServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/resources/static/images/spring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/resources/static/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/resources/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../forms-ejercicio3/src/main/resources/templates/layout/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerExamenJava/src/CrudPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerExamenJava/src/CrudPelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PrimerExamenJava/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PrimerExamenJava/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formularios.springboot/src/main/java/com/formularios/springboot/controllers/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../formularios.springboot/src/main/java/com/formularios/springboot/controllers/FormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formularios.springboot/src/main/java/com/formularios/springboot/services/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../formularios.springboot/src/main/java/com/formularios/springboot/services/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formularios.springboot/src/main/resources/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../formularios.springboot/src/main/resources/templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formularios.springboot/src/main/resources/templates/resultado.html" beforeDir="false" afterPath="$PROJECT_DIR$/../formularios.springboot/src/main/resources/templates/resultado.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,23 +69,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2WxDujGzuRpPIR38qaD5Lj9bScz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/cdsja/OneDrive/Documentos/GitHub/DigitalTrainee2023/segundo-examen",
-    "onboarding.tips.debug.path": "C:/Users/cdsja/OneDrive/Documentos/GitHub/DigitalTrainee2023/SegundoExamenSpring/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cdsja/OneDrive/Documentos/GitHub/DigitalTrainee2023/SegundoExamenSpring&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/cdsja/OneDrive/Documentos/GitHub/DigitalTrainee2023/SegundoExamenSpring/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

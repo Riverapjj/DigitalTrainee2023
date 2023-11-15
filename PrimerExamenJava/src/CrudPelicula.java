@@ -8,5 +8,5 @@ public interface CrudPelicula {
     void agregarPelicula(Pelicula p);
     void actualizarPelicula(Pelicula p);
     void eliminarPelicula(Pelicula p);
-    Pelicula porNombre(Pelicula p);
+    Pelicula porNombre(String p);
 }

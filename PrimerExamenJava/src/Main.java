@@ -1,4 +1,5 @@
 import modelo.Pelicula;
+import modelo.Usuario;
 
 import java.util.*;
 
@@ -7,7 +8,6 @@ public class Main {
 
         List<UsuarioRepositorio> listaUsuarios = new ArrayList<>();
 
-
-
+        for (Usuario usuario : listaUsuarios) {}
     }
 }

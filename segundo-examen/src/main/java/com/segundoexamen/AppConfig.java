@@ -31,13 +31,15 @@ public class AppConfig {
 
         Producto producto3 = new Producto("Crema corporal", 15, cat2, procedencia1);
         Producto producto4 = new Producto("Jabon corporal", 23, cat2, procedencia2);
+        Producto producto5 = new Producto("Producto 5 revision", 23, cat2, procedencia2);
 
         /*Creando lineas de factura por cada producto*/
         ItemFactura item1 = new ItemFactura(producto1, 3);
         ItemFactura item2 = new ItemFactura(producto2, 2);
         ItemFactura item3 = new ItemFactura(producto3, 5);
         ItemFactura item4 = new ItemFactura(producto4, 8);
+        ItemFactura item5 = new ItemFactura(producto5, 4);
 
-        return Arrays.asList(item1, item2, item3, item4);
+        return Arrays.asList(item1, item2, item3, item4, item5);
     }
 }

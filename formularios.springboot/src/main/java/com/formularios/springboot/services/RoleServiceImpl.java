@@ -2,10 +2,12 @@ package com.formularios.springboot.services;
 
 import com.formularios.springboot.models.domain.Role;
 import com.formularios.springboot.models.domain.Role;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class RoleServiceImpl implements RoleService{
     
     private List<Role> roles;
